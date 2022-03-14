@@ -22,22 +22,22 @@ function changeContacto(){
 
 
 function changeIn_Index(){
-    location.href="../index.html" // Function that directs the user to the main page (from the index)
+    location.href="index.html" // Function that directs the user to the main page (from the index)
 }
 function changeIn_Pinturas(){
-    location.href="../pages/pinturas.html" // Function that directs the user to the page: plants (from the index)
+    location.href="../pinturas.html" // Function that directs the user to the page: plants (from the index)
 }
 function changeIn_VozFrida(){
-    location.href="../pages/vozfrida.html" // Function that directs the user to the page: trees (from the index)
+    location.href="../vozfrida.html" // Function that directs the user to the page: trees (from the index)
 }
 function changeIn_Fotos(){
-    location.href="../pages/fotos.html" // Function that directs the user to the page: consultancies (from the index)
+    location.href="../fotos.html" // Function that directs the user to the page: consultancies (from the index)
 }
 function changeIn_FrasesCel(){
-    location.href="../pages/frasesCel.html" // Function that directs the user to the page: who are we? (from the index)
+    location.href="../frasesCel.html" // Function that directs the user to the page: who are we? (from the index)
 }
 function changeIn_Contacto(){
-    location.href="../pages/contact.html" // Function that directs the user to the page: who are we? (from the index)
+    location.href="../contact.html" // Function that directs the user to the page: who are we? (from the index)
 }
 
 
