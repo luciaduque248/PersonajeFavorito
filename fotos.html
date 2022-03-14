@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+    <head>
+        <meta charset="utf-8">
+        <title> Frida Kahlo</title>
+        <link rel="icon" type="image/png" href="img/icon.png">
+        <link rel="stylesheet" href="css/fotos.css">
+        <link rel="stylesheet" href="fonts.css">
+        <script src="/js/index.js"></script>
+        <link rel="stylesheet" href="/fonts.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+        <!--Iconos-->
+        <script src="https://kit.fontawesome.com/4bc23db062.js" crossorigin="anonymous"></script>
+        
+    </head>
+
+   <body>
+   <header>
+        <div class="ancho">
+                <div class="logo">
+                        <p><a href="index.html">Frida Kahlo </a></p>
+                </div>
+        </div>
+        <section class="nav">
+             <nav>
+                    <div class="menuBar">
+                        <a href="#" class="bt-menu"><span class="fa-solid fa-bars"></span>Menu</a>
+                    </div>   
+                        <ul>
+                            <li><a onclick="changeIn_Index()"><span class="icon-home3"></span>Inicio</li></a>
+                            <li><a onclick="changeIn_Pinturas()"><span class="icon-images"></span>Pinturas</a></li>
+                            <li><a onclick="changeIn_VozFrida()"><span class="icon-mic"></span>Voz de Frida</li></a>
+                            <li><a onclick="changeIn_Fotos()"><span class="icon-camera"></span>Fotos</a></li>
+                            <li><a onclick="changeIn_FrasesCel()"><span class="icon-bookmarks"></span>Frases celebres</a></li>
+                            <li><a onclick="changeIn_Contacto()"><span class="icon-bubbles2"></span>Contactanos</a></li>
+                        </ul>
+                    </nav>
+        </section>
+
+        </header>
+
+        <div class="titulo1">
+            <h1>Galeria de Fotos de Frida</h1>
+        </div>
+
+        <div class="galeria">
+            <div class="container1image">
+                <a href="#image1"><img src="img/uno1.jpeg" alt="" ></a>
+                    <div class="pie">
+                        <p>Frida a los 5 años</p>
+                    </div>
+            </div>
+
+            <div class="container2image">
+                <a href="#image2"><img src="img/dos.jpeg" alt=""></a>
+                <div class="pie">
+                    <p>Frida Kahlo y Diego Rivera</p>
+                </div>
+            </div>
+
+            <div class="container3image">
+                <a href="#image3"><img src="img/tres.jpeg" alt=""></a>
+                <div class="pie">
+                    <p>Frida Kahlo en Nueva York</p>
+                </div>
+            </div>
+
+            <div class="container4image">
+                <a href="#image4"><img src="img/cuatro4.jpeg" alt=""></a>
+                <div class="pie">
+                    <p>	Frida Kahlo - El retrato bretón</p>
+                </div>
+            </div>
+
+            <div class="container5image">
+                <a href="#image5"><img src="img/cinco.jpeg" alt=""></a>
+                <div class="pie">
+                    <p>Frida con Granizo</p>
+                </div>
+            </div>
+
+            <div class="container6image">
+                <a href="#image6"><img src="img/seis.jpeg" alt=""></a>
+                <div class="pie">
+                    <p>	Frida con cuadro "Las Dos Fridas"</p>
+                </div>
+            </div>
+
+        </div>
+
+    <!--Imagenes flotates-->
+        <article class="light-box" id="image1">
+            <a href="#image6" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="img/uno.jpeg" alt="">  <!--style="width: 50%"-->
+            <a href="#image2" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close"> X </a>
+        </article>
+
+        <article class="light-box" id="image2">
+            <a href="#image1" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="img/dos.jpeg" alt="">  <!--style="width: 50%"-->
+            <a href="#image3" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close"> X </a>
+        </article>
+
+        <article class="light-box" id="image3">
+            <a href="#image2" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="img/tres3.jpeg" alt="">  <!--style="width: 50%"-->
+            <a href="#image4" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close"> X </a>
+        </article>
+
+        <article class="light-box" id="image4">
+            <a href="#image3" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="img/cuatro.jpeg" alt="">  <!--style="width: 50%"-->
+            <a href="#image5" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close"> X </a>
+        </article>
+
+        <article class="light-box" id="image5">
+            <a href="#image4" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="img/cinco.jpeg" alt="">  <!--style="width: 50%"-->
+            <a href="#image6" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close"> X </a>
+        </article>
+
+        <article class="light-box" id="image6">
+            <a href="#image5" class="next"><i class="fa-solid fa-arrow-left"></i></a>
+            <img src="img/seis.jpeg" alt="">  <!--style="width: 50%"-->
+            <a href="#image1" class="next"><i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#" class="close"> X </a>
+        </article>
+
+        </body>
+        <footer class="pie-pagina">
+       
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="index.html"></a>
+                            <p>Frida Kahlo</p>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>Sobre nosotros</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, vel!</p>
+                </div>
+                <div class="box">
+                    <h2>Contactenos</h2>
+                    <div class="red-social" style="width: 232px">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div> 
+                <div class="box" style="width: 232px">
+                    <h2>Formulario</h2>
+                    <p>Tienes preguntas, sugerencias o dudas acerca de la vida de Frida Kahlo, escribenos</p>
+                    <p><em><u>Aqui</p></u></em>
+                </div>
+                
+            </div>
+            <div class="grupo-2">
+                <small>&copy;2021 <b>Sara Duque</b> - Todos los Derechos Reservados </small>
+            </div>
+        </footer>
+    
+    </html>

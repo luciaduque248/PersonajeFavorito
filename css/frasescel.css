@@ -1,0 +1,252 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fuentes/Raleway-Regular.ttf);
+    font-family: DancingScript;
+    src: url(../fuentes/DancingScript-VariableFont_wght.ttf)
+}
+
+
+*{                              /* Caracteristicas de diseño al HEAD*/
+    margin: 0;
+    padding: 0;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+header{                         /* Caracteristicas de diseño al HEADER */
+width: 100%;
+height: 50%;
+background-color: rgba(255, 255, 255, 0.747);
+}
+
+body{
+background-image: url(https://fondosmil.com/fondo/58890.jpg);
+background-size: cover;
+}
+
+header nav{
+width: auto;
+display: inline-block;
+margin: 0px auto;
+padding-top: 0px;
+}
+
+.menuBar {
+display: none;
+}
+
+header nav ul {
+overflow: hidden;
+list-style: none;
+
+}
+
+header nav ul li{
+float: left;
+}
+
+header nav ul li a{
+color: black;
+padding: 20px;
+text-decoration: none;
+display: block;
+font-weight: bold;
+font-family: Raleway;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-size: 11px;
+}
+
+header nav ul li span{ 
+margin-right: 10px;
+}
+
+.logo p a{                      /* Caracteristicas de diseño-escritura al LOGO */
+color: black;                     /* color del logo (letra) */
+font-size: 40px;                   /* tamaño del logo (letra) */
+text-decoration: none;             /* sin decoracion del logo (letra) */
+font-weight: bold;
+font-family: Raleway;
+
+}
+
+.ancho{                                         /* Caracteristicas de FONDO al NAV BAR */
+width: 90%;                                             /* ancho del logo */
+height: 10px;                                           /* altura del logo */
+margin: auto;                                           /* margen del NAV BAR */
+
+}
+
+.logo{                          /* Caracteristicas de diseño al LOGO */
+width: 30%;                                         /* ancho del logo */
+height: 0px;                                       /* altura del logo */           /* fondo del logo */
+float: left;                                        /* alinear a izquierda */
+padding-top: 18px;                                  /* centrar elemento en el header */
+box-sizing: border-box;                              /* no pasarse del recuadro del header */
+padding: 10px;
+
+}
+
+nav ul li a:hover{
+color: palevioletred; 
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::: BODY :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.titulo1 h1{
+    width: 60%;                                         
+    height: auto;
+    color: black;                     
+    font-size: 70px;
+    margin: 30px auto;
+    font-family: Redressed;
+    background-color: rgba(255, 255, 255, 0.747);
+    text-align: center;
+    border-radius: 15px;
+
+}
+
+.container-frases{
+    background-color: rgba(255, 255, 255, 0.747);
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border-radius: 3px;
+    padding: 40px 30px;
+}
+
+.container-frases .imagen{
+    width: 32%;
+    position: relative;
+    height: 250px;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0, .75);
+}
+
+.imagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgb(255, 0, 76);
+    width: 100%;
+    height: 0;
+    transition: 1s ease;
+    overflow: hidden;
+}
+
+.overlay h2{
+    color: white;
+    font-weight: 300;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    font-family: DancingScript;
+
+} 
+
+.imagen:hover .overlay{
+    height: 100%;
+    cursor: pointer;   
+}
+
+
+
+/* :::::::::::::::::::: Pie de Pagina :::::::::::::::::::: */
+
+.pie-pagina{
+width: 100%;
+background-image: linear-gradient(rgba(255, 255, 255, 0.548), rgba(0, 0, 0, 0.582)), url(../img/footerfrida.png);
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+.pie-pagina .grupo-1{
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-gap: 50px;
+padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure p{
+color: black;                     /* color del logo (letra) */
+font-size: 40px;                   /* tamaño del logo (letra) */
+text-decoration: none;             /* sin decoracion del logo (letra) */
+font-weight: bold;
+font-family: Raleway;
+}
+
+.pie-pagina .grupo-1 .box figure{
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+font-family: Raleway;
+color: black;
+margin-bottom: 35px;
+font-size: 23px;
+
+}
+
+.pie-pagina .grupo-1 .box p{
+color: black;
+font-family: Raleway;
+font-weight: 500;
+margin-bottom: 12px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+display: inline-block;
+text-decoration: none;
+width: 45px;
+height: 45px;
+line-height: 45px; 
+margin-right: 10px;
+background-color: rgba(255, 255, 255, 0.911);
+text-align: center;
+transition: all 300ms ease; 
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+color: palevioletred;
+}
+
+.pie-pagina .grupo-2{
+background-color: rgba(255, 255, 255, 0.884);
+padding: 15px 10px;
+text-align: center;
+color: black;
+}
+
+.pie-pagina .grupo-2 small{
+font-size: 15px;
+font-family: Raleway;
+}
+
+.pie-pagina .grupo-1 .formulario{
+font-family: Raleway;
+color: black;
+margin-bottom: 35px;
+font-size: 20px;
+}

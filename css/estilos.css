@@ -1,0 +1,408 @@
+            /* html{
+                background-image: url(https://fondosmil.com/fondo/58890.jpg);
+                background-size: cover;         /* 100vw 100vh; 
+            } */
+            @font-face {
+                font-family: Raleway;
+                src: url(../fuentes/Raleway-Regular.ttf);
+                font-family: Raleway2;
+                src: url(../fuentes/Raleway-Bold.ttf);
+            }
+            
+            @media (max-width: 414px) {
+                #img #iframe{
+                    float: none;
+            }
+}
+
+*{                              /* Caracteristicas de diseño al HEAD*/
+    margin: 0;
+    padding: 0;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+header{                         /* Caracteristicas de diseño al HEADER */
+    width: 100%;
+    height: 50%;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+body{
+    background-image: url(https://fondosmil.com/fondo/58890.jpg);
+    background-size: cover;
+}
+
+header nav{
+    width: auto;
+    display: inline-block;
+    margin: 0px auto;
+    padding-top: 0px;
+}
+
+.menuBar {
+    display: none;
+}
+
+header nav ul {
+    overflow: hidden;
+    list-style: none;
+
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+
+    font-family: Raleway2;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+header nav ul li span{ 
+    margin-right: 10px;
+}
+
+.logo p a{                      /* Caracteristicas de diseño-escritura al LOGO */
+    color: black;                     /* color del logo (letra) */
+    font-size: 40px;                   /* tamaño del logo (letra) */
+    text-decoration: none;             /* sin decoracion del logo (letra) */
+    font-weight: bold;
+    font-family: Raleway;
+     
+}
+
+.ancho{                                         /* Caracteristicas de FONDO al NAV BAR */
+    width: 90%;                                             /* ancho del logo */
+    height: 10px;                                           /* altura del logo */
+    margin: auto;                                           /* margen del NAV BAR */
+
+}
+
+.logo{                          /* Caracteristicas de diseño al LOGO */
+    width: 30%;                                         /* ancho del logo */
+    height: 0px;                                       /* altura del logo */           /* fondo del logo */
+    float: left;                                        /* alinear a izquierda */
+    padding-top: 18px;                                  /* centrar elemento en el header */
+    box-sizing: border-box;                              /* no pasarse del recuadro del header */
+    padding: 10px;
+   
+}
+
+nav ul li a:hover{
+    color: palevioletred; 
+}
+
+
+/* :::::::::::::::::::::::::::::::::::::::: BODY :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+.titulo1 h1{
+    width: 40%;                                         
+    height: auto;
+    color: black;                     
+    font-size: 70px;
+    /*  -webkit-text-stroke: 1px black;              redondear texto */
+    margin: 30px auto;
+    font-family: Raleway2;
+    background-color: rgba(255, 255, 255, 0.747);
+    text-align: center;
+    border-radius: 15px;
+}
+
+
+.container1 p{
+    background: rgba(255, 255, 255, 0.747);
+    box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.24);
+    border-radius: 5px;
+    text-align: justify;
+    font-size: 15px;
+    font-family: Raleway;
+    padding: 20px 50px;   /* Dimensiones para el recuadro blanco */
+    margin: 30px auto ;         /* Dimensiones recuadro fuera del blanco */
+    width: 1160px;
+    
+    
+}
+
+.container1 img{
+    border: 2px solid black;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 0.4em;
+    margin-left: 7em;
+    margin-top: 2em;
+    width: 15%;
+    
+}
+
+.container1 iframe{
+    border: 2px solid black;
+    float: right;
+    margin-right: 1em;
+    margin-bottom: 0.4em;
+    margin-left: 2em;
+    margin-top: 1em;
+    width: 50%;
+    
+}
+
+#img2{
+    border: 2px solid black;
+    float: left;
+    margin-right: 2em;
+    margin-bottom: 0.4em;
+    margin-left: 0.5em;
+    margin-top: 0.5em;
+    width: 28%;
+}
+
+
+
+
+
+/* :::::::::::::::::::: Pie de Pagina :::::::::::::::::::: */
+
+.pie-pagina{
+    width: 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.548), rgba(0, 0, 0, 0.582)), url(../img/footerfrida.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.pie-pagina .grupo-1 .box figure p{
+    color: black;                     /* color del logo (letra) */
+    font-size: 40px;                   /* tamaño del logo (letra) */
+    text-decoration: none;             /* sin decoracion del logo (letra) */
+    font-weight: bold;
+    font-family: Raleway;
+}
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.pie-pagina .grupo-1 .box h2{
+    font-family: Raleway;
+    color: black;
+    margin-bottom: 35px;
+    font-size: 23px;
+
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: black;
+    font-family: Raleway;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px; 
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.911);
+    text-align: center;
+    transition: all 300ms ease; 
+}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: palevioletred;
+}
+
+.pie-pagina .grupo-2{
+    background-color: rgba(255, 255, 255, 0.884);
+    padding: 15px 10px;
+    text-align: center;
+    color: black;
+}
+
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+.pie-pagina .grupo-1 .formulario{
+    font-family: Raleway;
+    color: black;
+    margin-bottom: 35px;
+    font-size: 20px;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: ADAPTAR A PANTALLA ::::::::::::::::::::::::::::::::::::::::: 
+
+@media only screen and (max-width:768px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+    .pie-pagina .grupo-1 .box h2{
+        text-align: center;
+    }
+
+    .pie-pagina .grupo-1 .red-social {
+        width: 80%;                                         
+        padding-left: 60px;
+        padding-right: 50px;
+    }
+
+
+    header nav {
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        cursor: pointer;
+    }
+
+    header nav ul li {
+        display: block;
+        float: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+        cursor: pointer;
+
+    }
+
+    .menuBar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+        cursor: pointer;
+    }
+
+    .menuBar .bt-menu{
+        display: block;
+        padding: 20px;
+        cursor: pointer;
+        margin: 10px auto;
+        
+        background: rgb(255, 255, 255);
+        color: black;
+        font-family: Raleway2;
+        text-decoration: none;
+        font-size: 25px; 
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+    }
+
+    .menuBar span {
+        float: right;
+        font-size: 40px;
+    }
+
+    .ancho{                                         
+                                                    
+        height: 100px;                                          
+        margin: auto;                                           
+    }
+
+    
+
+    .logo{
+
+        float: center;                                         
+        padding-top: 2.7em;
+        width: 100%;
+    }
+
+    logo p a { 
+        width: px;
+    }
+
+    .titulo1 h1{
+        width: 50%;                                         
+        height: auto;
+        color: black;                     
+        font-size: 40px;
+
+        font-family: Raleway2;
+        background-color: rgba(255, 255, 255, 0.747);
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    .container1 p{
+        background: rgba(255, 255, 255, 0.747);
+        box-shadow: 1px 5px 25px rgba(0, 0, 0, 0.24);
+        border-radius: 5px;
+        text-align: justify;
+        font-size: 15px;
+        font-family: Raleway;
+        padding: 10px 35px;   /* Dimensiones para el recuadro blanco */
+        /* margin: 30px auto;         Dimensiones recuadro fuera del blanco 
+        width: 250px;
+        height: 60%;
+        
+    }
+
+    .container1 img{
+        border: 2px solid black;
+        float: left;
+        margin-right: 10%;
+        margin-bottom: 0.8em;
+        margin-left: 6.3em;
+        margin-top: 1.5em;
+        width: 50%;
+        
+    }
+    
+    .container1 iframe{
+        border: 2px solid black;
+        float: left;
+        margin-bottom: 1em;
+        margin-left: 0em;
+        margin-top: 0em;
+        width: 98%;
+        height: 30%;
+        
+    }
+    
+    #img2{
+        border: 2px solid black;
+        float: left;
+        margin-bottom: 1em;
+        margin-left: 0em;
+        margin-top: 0em;
+        width: 98%;
+        height: 30%;
+    }
+} */
+
+
+
+
+
+
+
+
+
