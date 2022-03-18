@@ -15,84 +15,56 @@
     padding: 0;
 }
 
-/* ::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-header{                         /* Caracteristicas de diseño al HEADER */
-width: 100%;
-height: 50%;
-background-color: rgba(255, 255, 255, 0.747);
-}
-
 body{
 background-image: url(https://fondosmil.com/fondo/58890.jpg);
 background-size: cover;
 }
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-header nav{
-width: auto;
-display: inline-block;
-margin: 0px auto;
-padding-top: 0px;
+header{
+    font-family: Raleway;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: rgba(255, 255, 255, 0.747);
 }
 
-.menuBar {
-display: none;
+header a{
+    text-decoration: none;
+    color: rgb(216, 27, 68);
 }
 
-header nav ul {
-overflow: hidden;
-list-style: none;
-
-}
-
-header nav ul li{
-float: left;
-}
-
-header nav ul li a{
-color: black;
-padding: 20px;
-text-decoration: none;
-display: block;
-font-weight: bold;
-font-family: Raleway;
-text-transform: uppercase;
-letter-spacing: 2px;
-font-size: 11px;
-}
-
-header nav ul li span{ 
-margin-right: 10px;
-}
-
-.logo p a{                      /* Caracteristicas de diseño-escritura al LOGO */
-color: black;                     /* color del logo (letra) */
-font-size: 40px;                   /* tamaño del logo (letra) */
-text-decoration: none;             /* sin decoracion del logo (letra) */
-font-weight: bold;
-font-family: Raleway;
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(216, 27, 68, 0.877);
+    
+    justify-content: center;
 
 }
 
-.ancho{                                         /* Caracteristicas de FONDO al NAV BAR */
-width: 90%;                                             /* ancho del logo */
-height: 10px;                                           /* altura del logo */
-margin: auto;                                           /* margen del NAV BAR */
-
+nav a{
+    text-decoration: none;
+    text-align: center;
+    margin: 0 10px;
+    color: white;
+    font-family: Raleway;
+    padding: 1rem 1rem;
+    transition: all 0.5s ease;
 }
 
-.logo{                          /* Caracteristicas de diseño al LOGO */
-width: 30%;                                         /* ancho del logo */
-height: 0px;                                       /* altura del logo */           /* fondo del logo */
-float: left;                                        /* alinear a izquierda */
-padding-top: 18px;                                  /* centrar elemento en el header */
-box-sizing: border-box;                              /* no pasarse del recuadro del header */
-padding: 10px;
-
+nav a i{
+    margin: 0 0.5rem;
 }
 
-nav ul li a:hover{
-color: palevioletred; 
+.item:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+    transition: all 0.5s ease;
+
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::: BODY ::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -156,13 +128,6 @@ th, td {
 .tabla td a:active {
     color: red;
 }
-
-
-
-
-
-
-
 
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::: Pie de Pagina :::::::::::::::::::::::::::::::::::::::::::::: */

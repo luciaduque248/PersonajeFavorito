@@ -23,66 +23,60 @@
 body{
     background-image: url(https://fondosmil.com/fondo/58890.jpg);
     background-size: cover;
+
 }
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::: */
-
-header{                         /* Caracteristicas de diseño al HEADER */
-    width: 100%;
-    display: flex;
+header{
+    font-family: Raleway2;
+    font-size: 50px;
+    text-align: center;
+    padding: 1rem 0;
     background-color: rgba(255, 255, 255, 0.747);
 }
 
-.nav{
-    display: flex;
-}
-
-header nav ul {
-    background-color: red;
-    overflow: hidden;
-    list-style: none;
-
-}
-
-header nav ul li{
-    float: left;
-}
-
-header nav ul li a{
-    color: black;
-    padding: 20px;
+header a{
     text-decoration: none;
-    display: block;
-
-    font-family: Raleway2;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 11px;
+    color: rgb(216, 27, 68);
 }
 
-header nav ul li span{ 
-    margin-right: 10px;
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(216, 27, 68, 0.877);
+    
+    justify-content: center;
+
 }
 
-.logo p a{                      /* Caracteristicas de diseño-escritura al LOGO */
-    color: black;                     /* color del logo (letra) */
-    font-size: 40px;                   /* tamaño del logo (letra) */
-    text-decoration: none;             /* sin decoracion del logo (letra) */
-    font-weight: bold;
+nav a{
+    text-decoration: none;
+    text-align: center;
+    margin: 0 10px;
+    color: white;
     font-family: Raleway;
-    background-color: blue;
+    padding: 1rem 1rem;
+    transition: all 0.5s ease;
 }
 
+nav a i{
+    margin: 0 0.5rem;
+}
 
-nav ul li a:hover{
-    color: palevioletred; 
+.item:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+    transition: all 0.5s ease;
+
 }
 
 
 /* :::::::::::::::::::::::::::::::::::::::: BODY :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 .titulo1 h1{
-    width: 40%;                                         
+    width: 70%;                                         
     height: auto;
     color: black;                     
     font-size: 70px;
