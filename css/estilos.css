@@ -7,6 +7,8 @@
                 src: url(../fuentes/Raleway-Regular.ttf);
                 font-family: Raleway2;
                 src: url(../fuentes/Raleway-Bold.ttf);
+                font-family: DancingScript;
+                src: url(../fuentes/DancingScript-VariableFont_wght.ttf)
             }
             
             @media (max-width: 414px) {
@@ -28,7 +30,8 @@ body{
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::: */
 header{
-    font-family: Raleway2;
+    font-family: Raleway;
+    font-weight: bolder;
     font-size: 50px;
     text-align: center;
     padding: 1rem 0;
@@ -76,13 +79,13 @@ nav a i{
 /* :::::::::::::::::::::::::::::::::::::::: BODY :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
 .titulo1 h1{
-    width: 70%;                                         
+    width: 60%;                                         
     height: auto;
     color: black;                     
     font-size: 70px;
     /*  -webkit-text-stroke: 1px black;              redondear texto */
     margin: 30px auto;
-    font-family: Raleway2;
+    font-family: DancingScript;
     background-color: rgba(255, 255, 255, 0.747);
     text-align: center;
     border-radius: 15px;
