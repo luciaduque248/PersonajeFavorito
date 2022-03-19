@@ -48,9 +48,9 @@ header a{
 
 nav{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    
     background-color: rgba(216, 27, 68, 0.877);
-    width: auto;
     justify-content: center;
 
 }
@@ -58,7 +58,6 @@ nav{
 nav a{
     text-decoration: none;
     text-align: center;
-    margin: 0 10px;
     color: white;
     font-family: Raleway;
     padding: 1rem 1rem;
@@ -81,13 +80,20 @@ nav a i{
 
 /* :::::::::::::::::::::::::::::::::::::::: BODY :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-.titulo1 h1{
+.titulo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.title{
     width: 60%;                                         
     height: auto;
     color: black;                     
     font-size: 70px;
     /*  -webkit-text-stroke: 1px black;              redondear texto */
-    margin: 30px auto;
+        
     font-family: DancingScript;
     background-color: rgba(255, 255, 255, 0.747);
     text-align: center;
@@ -234,23 +240,17 @@ nav a i{
 
 /* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE: tableta ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 @media screen and (min-width:768px) {
-    header{
-        width: 1200px;
-    }
-
     nav{
         flex-direction: column;
-        width: 1200px;
     }
-
-    .titulo1 h1{
-        align-items: center;
-    }
-    
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE: tableta ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 @media screen and (min-width:1024px) {
+
+    nav{
+        flex-direction: row;
+    }
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE: tableta ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
