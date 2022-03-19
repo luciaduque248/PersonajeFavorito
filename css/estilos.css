@@ -28,8 +28,11 @@ body{
 
 }
 
+
+
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::: */
 header{
+    grid-area: header;
     font-family: Raleway;
     font-weight: bolder;
     font-size: 50px;
@@ -47,7 +50,7 @@ nav{
     display: flex;
     flex-direction: row;
     background-color: rgba(216, 27, 68, 0.877);
-    
+    width: auto;
     justify-content: center;
 
 }
@@ -91,6 +94,10 @@ nav a i{
     border-radius: 15px;
 }
 
+.container1{
+    display: flex;
+    flex-direction: column ;
+}
 
 .container1 p{
     background: rgba(255, 255, 255, 0.747);
@@ -99,20 +106,16 @@ nav a i{
     text-align: justify;
     font-size: 15px;
     font-family: Raleway;
-    padding: 20px 50px;   /* Dimensiones para el recuadro blanco */
+    padding: 2.5rem 2rem;   /* Dimensiones para el recuadro blanco */
     margin: 30px auto ;         /* Dimensiones recuadro fuera del blanco */
     width: 1160px;
-    
     
 }
 
 .container1 img{
     border: 2px solid black;
     float: left;
-    margin-right: 2em;
-    margin-bottom: 0.4em;
-    margin-left: 7em;
-    margin-top: 2em;
+    margin: 0 1.5rem;
     width: 15%;
     
 }
@@ -231,6 +234,18 @@ nav a i{
 
 /* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE: tableta ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 @media screen and (min-width:768px) {
+    header{
+        width: 1200px;
+    }
+
+    nav{
+        flex-direction: column;
+        width: 1200px;
+    }
+
+    .titulo1 h1{
+        align-items: center;
+    }
     
 }
 
