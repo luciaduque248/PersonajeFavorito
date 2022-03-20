@@ -146,7 +146,7 @@ th, td {
     background-image: linear-gradient(rgba(255, 255, 255, 0.548), rgba(0, 0, 0, 0.582)), url(../img/footerfrida.png);
     background-repeat: no-repeat;
     background-size:cover;
-    overflow: scroll;
+    
     display: flex;
     flex-direction: column;
 
