@@ -9,12 +9,7 @@
                 src: url(../fuentes/Raleway-Bold.ttf);
                 font-family: DancingScript;
                 src: url(../fuentes/DancingScript-VariableFont_wght.ttf)
-            }
             
-            @media (max-width: 414px) {
-                #img #iframe{
-                    float: none;
-            }
 }
 
 *{                              /* Caracteristicas de diseño al HEAD*/
