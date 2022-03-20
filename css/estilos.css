@@ -26,7 +26,6 @@ html{
 
 /* ::::::::::::::::::::::::::::::::::::::::::::::::::: HEADER ::::::::::::::::::::::::::::::::::::::::::::::::::: */
 header{
-    grid-area: header;
     font-family: Raleway;
     font-weight: bolder;
     font-size: 50px;
@@ -42,9 +41,9 @@ header a{
 
 nav{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: row;
     background-color: rgba(216, 27, 68, 0.877);
+    
     justify-content: center;
 
 }
@@ -52,6 +51,7 @@ nav{
 nav a{
     text-decoration: none;
     text-align: center;
+    margin: 0 10px;
     color: white;
     font-family: Raleway;
     padding: 1rem 1rem;
